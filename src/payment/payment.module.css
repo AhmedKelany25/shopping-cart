@@ -1,0 +1,234 @@
+main{
+    padding: 1rem 10rem;
+}
+.header{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+}
+.header h2{
+    font-size: 25px;
+}
+.cart img{
+    margin-left: 8rem;
+}
+/*-------------------items of grid--------------------------*/
+
+.item1{
+    grid-area: info; 
+    width: 100%;
+}
+.item2{
+    grid-area: methode; 
+    width: 500px;
+
+}
+@media  screen and (max-width: 992px){
+    .item2{
+        grid-area: methode; 
+        width: 100%;
+    
+    }
+}
+.item3{
+    grid-area: cart; 
+    width: 100%;
+
+}
+.item1 button{
+    border: 0;
+    background-color: #f0af39;
+    padding: 18px 44px;
+    font-size: 16px;
+    font-weight: 700;
+    border-radius: 50px;
+    margin-right: 2rem;
+    margin-bottom: 1rem;
+}
+/*-----------------grid--------------------*/
+.gridcontainer {
+    display: grid;
+    grid-template-areas:
+      'info info methode methode cart cart'
+      'info info methode methode cart cart'
+      ;
+    grid-gap: 3rem;
+    margin: 0 auto;}
+  
+  .gridcontainer > div {
+    background-color: rgba(255, 255, 255, 0.8);
+    text-align:start;
+    padding: 20px 0;
+    font-weight: bold;
+    font-size: 22px;
+    position: relative;
+  }
+  .gridcontainer h3{
+      margin-left: 0;
+  }
+  .paymentMethods{
+      margin-bottom: 4rem;
+  }
+  .paymentMethods  img{
+       display: inline-block;
+       border: 1px solid;
+       border-radius: 50px;
+       width: 30%;
+       height: 60px;
+       margin-right: 1rem;
+
+  }
+  /*------------------------form-------------------------*/
+  form h2{
+      font-size: 18px;
+    margin-top: 3rem;
+  }
+
+  form input{
+    border-radius: 50px;
+    padding: 20px 27px;
+    border: 1px solid #c0c0c0;
+    margin-right: 1rem;
+    margin-bottom: 1rem;
+    width: 46%;
+    height: 78px;
+
+  }
+  .cartproceed{
+      width: 100%;
+  }
+  .cartitem {
+      display: flex;
+      justify-content: space-between;
+      margin-bottom: 3rem;
+    
+  }
+  .cartitem h4 {
+    margin-left: 5rem;
+
+  }
+  .itemProduct img{
+    width: 96px;
+    height: 100px;
+    margin-right: 3rem;
+    border-radius: 50%;
+    display: inline-block;
+  }
+  .itemProduct{
+      display: flex;
+      justify-content: space-between;
+  }
+  .itemProduct p {
+      display: inline-block;
+      margin-top: 0 !important;
+      font-size: 23px;  
+      position: relative;
+    }
+.itemProduct p span{
+        
+        position: absolute;
+        left: 0;
+        top: 108%;
+        color: #ddd;
+}
+
+.item3 button{
+        background-color: #e6e6e6;
+        border: 0;
+        padding: 28px 60px;
+        border-radius: 50px;
+        font-size: 23px;
+        margin-left: 21%;
+}
+.free{
+    margin-left: 21%;
+    padding: 28px 60px;
+    font-size: 21px;
+    font-weight: 100;
+    letter-spacing: 2px;
+}
+
+/*----------------------------------*/
+.checkout{
+    display: flex;
+    justify-content: space-between;
+  }
+  .cost input, h3, .checkoutButton {
+    margin-left: 3rem;
+    display: inline-block;
+  }
+  .cost input{
+    width: 21rem;
+    border: 1px solid #ddd;
+    border-radius: 35px;
+    padding: 20px 30px;
+  }
+
+  .cost .checkoutButton{
+    border: 0;
+    background-color: #f0af39;
+    padding: 18px 44px;
+    font-size: 16px;
+    font-weight: 700;
+    border-radius: 50px;
+    text-decoration: none;
+    color: #000;
+  }
+  .checkout h3 i{
+    margin-right: 2rem;
+  }
+
+
+  /*-------------*/
+  .whiteBack {
+    border: 1px solid #ddd !important;
+    padding: 18px 44px;
+    font-size: 16px;
+    font-weight: 700;
+    border-radius: 50px;
+    color: #000;
+      background-color: white !important;
+  }
+
+
+  /*-----------------*/
+  .paypal{
+    background-image: url("../../src/assets/paypal-logo.png");
+    height: 60px;
+    width: 30%;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    border: 1px solid #ddd;
+    border-radius: 50px;
+    display: inline-block;
+
+    margin-right: 1rem;
+  }
+  .visa{
+    background-image: url("../../src/assets/visa.png");
+    height: 60px;
+    width: 30%;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    border: 1px solid #ddd;
+    border-radius: 50px;
+    display: inline-block;
+
+    margin-right: 1rem;
+  } 
+.mastercard{
+    background-image: url("../../src/assets/paypal-logo.png");
+    height: 60px;
+    width: 30%;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    border: 1px solid #ddd;
+    border-radius: 50px;
+    display: inline-block;
+
+    margin-right: 1rem;
+  }  
